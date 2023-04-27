@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 
     Fah=(1.8*Cel)+32;
 
-    printf("Temperatura em Faheaint: %2.f",Fah);
+    printf("Temperatura em Faheaint: %2.f\n",Fah);
 
 
     return 0;
