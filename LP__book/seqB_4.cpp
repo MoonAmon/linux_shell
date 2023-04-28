@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <stdlib.h>
+#include <cstdio>
 
 int main(int argc, char const *argv[])
 {
@@ -15,6 +16,8 @@ int main(int argc, char const *argv[])
     float KMp=temp*VELm;
     float gas=KMp/13;
 
-    printf("")
+    printf("%2.fkm percorridos na viagem.\n",KMp);
+    printf("%f litros de gasolina gastos.\n",gas);
+
     return 0;
 }
