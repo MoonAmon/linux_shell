@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
     printf("digite a dist percorrida em Km: ");
     scanf("%f",&dist);
 
-    printf("digite o espaçode tempo em min: ");
+    printf("digite o espaço de tempo em min: ");
     scanf("%f",&temp);
 
     vel=(dist*1000)/(temp*60);
