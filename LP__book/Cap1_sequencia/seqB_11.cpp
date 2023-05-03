@@ -19,15 +19,15 @@ int main(int argc, char const *argv[])
     
     float votosV=vA+vB+vC;
     float qE=votosV+nulos;
-    float qEporc=(votosV/qE)*100;
     float pA=(vA/votosV)*100;
     float pB=(vB/votosV)*100;
     float pC=(vC/votosV)*100;
     float Pnulo=(nulos/votosV)*100;
+    float qVporc=100-Pnulo;
 
     printf("quantidade de votos validos: %2.f\n",votosV);
     printf("quantidade de eleitores: %2.f\n",qE);
-    printf("porcentagem de votos validos: %2.f%\n",qEporc);
+    printf("porcentagem de votos validos: %2.f%\n",qVporc);
     printf("porcentagem de votos nulos e brancos: %2.f%\n",Pnulo);
     printf("porcentagem de votos no candidato A: %2.f%\n",pA);
     printf("porcentagem de votos no candidato B: %2.f%\n",pB);
