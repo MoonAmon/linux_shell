@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     printf("Digite a base do triangulo: ");
     scanf("%f",&base);
 
-    float area = ((base*alt)/2);
+    float area=((base*alt)/2);
 
     printf("A area do triangulo: %f\n",area);
     

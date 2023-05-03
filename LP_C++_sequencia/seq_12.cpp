@@ -17,7 +17,7 @@ scanf("%f",&tax);
 printf("Digite o tempo da prestação: ");
 scanf("%f",&temp);
 
-float prest = (valor*temp*(tax/100));
+float prest=(valor*temp*(tax/100));
 
 printf("Valor da prestação em atraso: %2.f\n",prest);
    

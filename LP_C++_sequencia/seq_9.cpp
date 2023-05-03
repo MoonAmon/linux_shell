@@ -12,8 +12,8 @@ int main(int argc, char const *argv[])
     printf("digite a base do retângulo:");
     scanf("%f",&base);
 
-    float area = base*alt;
-    float peri = (base*2)+(alt*2);
+    float area=base*alt;
+    float peri=(base*2)+(alt*2);
 
     printf("perímetro: %f\n",peri);
     printf("área: %f\n",area);

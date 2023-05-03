@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     printf("Digite segundo numero para soma:\n");
     scanf("%d",&num2);
 
-    rst = num1 + num2;
+    rst=num1+num2;
 
     printf("SOMA=%d\n",rst);
 
