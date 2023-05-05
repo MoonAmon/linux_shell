@@ -8,11 +8,13 @@ int main(int argc, char const *argv[])
     printf("Digite um numero: ");
     scanf("%d",&num);
 
-    if (1<=num && 9>=num)
+    num=num*2;
+
+    if (num>30)
     {
-        printf("Número na faixa permitida!\n");
-    } else
-        printf("Número fora da faixa permitida!\n");
+        printf("Resultado: %d\n",num);
+    }
+        
     
 
     return 0;

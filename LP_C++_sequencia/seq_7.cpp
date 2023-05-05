@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
     float num3=3;
     float num4=4;
 
-    float md = ((num1*num1)+(num2*num2)+(num3*num3)+(num4*num4))/10;
+    float md=((num1*num1)+(num2*num2)+(num3*num3)+(num4*num4))/10;
 
     printf("Media ponderada: %f",md);
 

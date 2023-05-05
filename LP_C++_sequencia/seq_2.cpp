@@ -20,6 +20,12 @@ int main(int argc, char const *argv[])
     float md = (n1+n2+n3)/3;
 
     printf("media:%f\n",md);
+
+    if (md>=6)
+    {
+        printf("Aluno aprovado!\n");
+    } else
+        printf("Aluno reprovado!\n");
     
     return 0;
 }

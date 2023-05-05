@@ -13,10 +13,10 @@ int main(int argc, char const *argv[])
     printf("digite o divisor:");
     scanf("%d",&divs1);
 
-    float div2 = div1;
-    float divs2 = divs1;
-    double quo = div2/divs2;
-    double rest = div1%divs1;
+    float div2=div1;
+    float divs2=divs1;
+    double quo=div2/divs2;
+    double rest=div1%divs1;
 
     printf("Dividendo: %d\n",div1);
     printf("Divisor: %d\n",divs1);
