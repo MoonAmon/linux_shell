@@ -3,7 +3,6 @@
 
 int main(int argc, char const *argv[])
 {
-
     int c,fh;
     c=10;
 
@@ -13,8 +12,5 @@ int main(int argc, char const *argv[])
         printf("Temp Celsius: %d\n Temp em fahrnheit: %d\n",c,fh);
         c=c+10;
     }
-    
-
-
     return 0;
 }

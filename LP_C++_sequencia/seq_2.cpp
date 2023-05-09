@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
 
     float md = (n1+n2+n3)/3;
 
-    printf("media:%f\n",md);
+    printf("media:%.2f\n",md);
     
     return 0;
 }
