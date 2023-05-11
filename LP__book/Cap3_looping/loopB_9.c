@@ -3,16 +3,15 @@
 
 int main(int argc, char const *argv[])
 {
-    double Cgran = 0;
+    double Cgran = 1;
     int casa = 1;
-    double total = 0;
+    double total = 1;
 
     do
     {
-        Cgran=Cgran*2;
-        printf("Casa num: %d\n Total: %2.f\n Grões na casa atual: %2.f\n",casa,total,Cgran);
+        Cgran=Cgran+Cgran;
+        printf("Casa num: %d\n Total: %2.f\n Grões na casa atual: %2.f\n\n",casa,total,Cgran);
         total=Cgran+total;
-        Cgran++;
         casa++;
     
     } while (casa<=60);
