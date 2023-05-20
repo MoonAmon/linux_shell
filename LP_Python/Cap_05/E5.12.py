@@ -10,7 +10,7 @@ while i <= 24:
     money += moneyM
     taxaT = taxa * money
     total = taxaT + money
-    total2 = total + money
+    Total2 = total + money
     i += 1
 
-print("Total depois dos 24 meses R$%.2f" % (total2))
+print("Total depois dos 24 meses R$%.2f" % Total2)

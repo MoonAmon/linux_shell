@@ -1,12 +1,12 @@
-valor=int(input("Digite o valor a pagar R$"))
-cedulas=0
-atual=100
-apagar=valor
+valor = int(input("Digite o valor a pagar R$"))
+cedulas = 0
+atual = 100
+apagar = valor
 
 while True:
-    if atual<=apagar:
-        apagar-=atual
-        cedulas+=1
+    if atual <= apagar:
+        apagar -= atual
+        cedulas += 1
     else:
         print("%d cédula(s) de R$%d" % (cedulas, atual))
         if apagar == 0:
