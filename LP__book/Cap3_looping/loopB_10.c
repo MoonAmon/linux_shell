@@ -3,28 +3,29 @@
 
 int main(int argc, char const *argv[])
 {
-    double num,r;
-    int i=1;
+    int fat=1;
+    int n,cont,rfat;
 
-    do
+    for ( int i = 1; i <= 15; i++)
     {
-    
-    printf("Digite numero %d: ",i);
-    scanf("%f",&num);
 
-    int ant=num;
+    printf("Digite um numero para fatoração: ");
+    scanf("%d",&n);
 
-    while (num!=0)
+    for ( cont = 1; cont < n; cont++)
     {
-        num=num-1;
-        r=num*ant;
-        ant=ant-1;
+        fat = fat * cont;
+        printf("%d = %d * %d \n",fat,fat,cont); 
     }
     
-    i++;
-    } while (i<=15);
+    cont=0;
+    rfat=fat+rfat;
+    printf("%d = %d + %d \n",rfat,fat,rfat);
 
-    printf("resultado: %f\n",r);
+    }
+
+    printf("Resultado = %d",rfat);
+
     
     return 0;
 }
