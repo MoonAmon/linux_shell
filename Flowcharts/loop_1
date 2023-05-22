@@ -1,0 +1,9 @@
+1- definir variavel para o controle do laço (var I)
+2- entrada da variavel dos numeros (var N)
+3- inicializar variavel N em 15.
+4- enquanto I <= 200 faça
+    5- calcular raiz quadrada de N
+    6- apresentar resultado da raiz quadrada
+    7- incrementar em 1 a variavel I
+    8- incrementar em 1 a variavel N
+9- encerrar o programa
