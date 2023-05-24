@@ -1,0 +1,63 @@
+1-definir uma variavel para denominador DEN
+2-definir uma variavel para divisor DIV
+3-iniciar o denominador em 1 (DEN~1)
+4-inciar o divisor em 1 (DIV~1)
+5-enquanto a variável do denominador for menor ou igual a 99 e a variável do divisor for menor ou a 50 repetir (DEN<=99 & DIV<=50)
+	6-calcular a divisao de den por div (x=den/div)
+	7-apresentar resultado ("X")
+	8-incrementar em 1 o divisor (DIV+=1)
+	9-calcular o novo valor do denominador (DEN+=2)
+10-encerrar o programa
+
+--------------------------
+
+1-definir var int para a entrada do numero pelo usuario N
+	2-faça enquanto a var N for maior ou igual a 0 (N>=0)
+	3-calcular a soma do numeros da var N e atribua o resultado a var int X
+	4-incrementar em 1 a variável de controle do loop (I++)
+5-calcule a media dos valores de entrada e atribua a var float MD (MD=X/I)
+6-apresentar a soma e a media dos valores (X,MD)
+7-encerrar o programa
+
+----------------------
+
+1-definir var int para a entrada dos valores N
+2-para I=1 até 10 faça
+	3-entrada do valor para var N
+	4-calcular resto por 2 para verificar se o valor é impar ou par (RESTO=N%2)
+	5-se resto for igual a 0 faça (RESTO==0)
+		6-incrementar em 1 a var de contagem para os numeros pares (CONTP=+1)
+		7-calcular a soma dos numeros pares e atribuir o resultado em var (SOMAP+=N)
+	8-senão faça 
+		9-incrementar em 1 a var de contagem para impares (CONTI+=1)
+		10-calcular a soma dos impares para calculo de media (SOMAI+=N)
+12-encerrar o programa
+11-apresentar resultados
+
+-----------------------------------
+
+1-definir uma var para a entrada do codigo do funcionario COD
+2-definir uma var para a entrada do números de horas trabalhadas HORA
+3-definir uma var para a entrada do números de dependentes do funcionario DEP
+4-para I=1 até 10 faça
+	5-entrada do codigo de funcionario 
+	6-entrada do número de horas trabalhadas 
+	7-entrada dos dependentes 
+	8-calcular o salario bruto do func multiplicando as horas por 12 e os depen por 40 (SALBR=(HORAS*12)+(DEP*40))
+	9-calcular o desconto do INSS e do IR (DESCO=(SALBR*0.085)+(SALBR*0.05))
+	10-calcular o desconto final dos impostos sobre o salario bruto (SALLIQ=SALBR-DESCO)
+	11-apresentar resultados (COD,DESCO,SALLQ)
+
+------------------------------------------------------
+
+1-faça enquanto idade>=0
+2-entrada dos dados dos entrevistados sendo a variavel do sexo sendo string SEXO,IDADE,LIVROS
+4-calcular a quantidade de entrevistados mulheres,homens e de pessoas que nao leram livros (CONTFTOTAL,CONTMTOTAL,NLIVROS)
+5-se a idade do entravistado for menor que 10 faça (IDADE>10)
+	6-calcular a quantidade de livros lidos (TOTALPQ+=LIVROS)
+7-se o sexo do entrevistado for igual a feminino e a quantidade de livros lidos maior ou igual a 5 faça (SEXO==F && LIVROS>=5)
+	8-incrementar a var de contagem das mulheres que leram mais de 5 (CONTF+=1)
+9-se o sexo do entrevistado for igual a masculino e o numeros de livros lidos menor que 5 faça (SEXO==M && LIVROS<5)
+	10-incrementar a var de contagem dos homens que leram menos de 5 (CONTM_N+=1)
+11-se entravistado não tiver lido nenhum livro no ano de 2006 faça
+	11-incrementar a var de contagem de pessoas que nao leram livros (CONTN_LIVROS+=1)
