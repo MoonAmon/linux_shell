@@ -52,12 +52,74 @@
 
 1-faça enquanto idade>=0
 2-entrada dos dados dos entrevistados sendo a variavel do sexo sendo string SEXO,IDADE,LIVROS
-4-calcular a quantidade de entrevistados mulheres,homens e de pessoas que nao leram livros (CONTFTOTAL,CONTMTOTAL,NLIVROS)
+4-calcular a quantidade de entrevistados mulheres,homens e de pessoas que nao leram livros (CONTOTAL,CONTFTOTAL,CONTMTOTAL,NLIVROS)
 5-se a idade do entravistado for menor que 10 faça (IDADE>10)
 	6-calcular a quantidade de livros lidos (TOTALPQ+=LIVROS)
 7-se o sexo do entrevistado for igual a feminino e a quantidade de livros lidos maior ou igual a 5 faça (SEXO==F && LIVROS>=5)
 	8-incrementar a var de contagem das mulheres que leram mais de 5 (CONTF+=1)
 9-se o sexo do entrevistado for igual a masculino e o numeros de livros lidos menor que 5 faça (SEXO==M && LIVROS<5)
 	10-incrementar a var de contagem dos homens que leram menos de 5 (CONTM_N+=1)
-11-se entravistado não tiver lido nenhum livro no ano de 2006 faça
-	11-incrementar a var de contagem de pessoas que nao leram livros (CONTN_LIVROS+=1)
+	11-calcular somando a idade desses entrevistados (IDADEMENL)
+12-se entravistado não tiver lido nenhum livro no ano de 2006 faça
+	13-incrementar a var de contagem de pessoas que nao leram livros (CONTN_LIVROS+=1)
+13-calcular media da idade dos homens que leram menos que 5 livros (MDIDADEMEN = IDADEMENL/CONTM_N)
+14-calcular o percentual de pessoas que nao leram livros (MDNL=CONTFTOTAL/NLIVROS)
+15-apresentar o resultado da quantidade de mulheres que leram 5 livros ou mais (CONTF)
+16-apresentar resultado dessa media (MDIDADEMEN)
+17-apresentar o resultado da quantidade de livros lidos pelos entrevistados menores de 10 anos(TOTALPQ)
+18-apresentar resultado dessa media
+19-finalizar o programa
+
+-------------------------------------
+
+1-definir variáveis para numero de pessoas (int), idade (int), identificador(string) e opinião(int) (PESSOAS,IDADE,NICK,OP)
+2-definir variável para controle de repetição (I)
+3-para i=1 até 10 faça
+	4-entrada da idade da pessoa (IDADE)
+	5-se a idade da pessoa for maior que idade mais velha faça IDADE>IDADEOLD
+		6-atribua idade na variavel do mais velho (IDADEOLD=IDADE)
+		7-atribua identificador na variável do mais velho (NICKOLD=NICK)
+	8-entrada da identificação da pessoa (NICK)
+	9-entrada da opinião (OP)
+	10-se opinião for 0>OP ou 10<OP faça
+		11-apresentar resposta de número inválido
+	12-se opinião for 5>=OP faça
+		13-incrementar contador de pessoas que colocaram nota baixa para a peça(TOTALBAD++)
+	14-incrementar contador de pessoas total (TOTAL++)
+	15-calcular o total das idades das pessoas (TOTALID+=IDADE)
+16-calcular media da idade das pessoas que responderam o questionário (MD=TOTALID/TOTAL)
+17-calcular a porcentagem das pessoas que colocaram 5 ou menos (PCBAD=(TOTALBAD/TOTAL)*100)
+18-apresentar quantidade de pessoas que responderam (TOTAL)
+19-apresentar média da idade das pessoas (MD)
+20-apresentar porccentagem das pessoas que responderam com nota baixa (PCBAD)
+21-apresntar a pessoa mais velha a responder (NICKOLD,IDADEOLD)
+22-finalizar o programa
+
+------------------------------
+
+1-definir as variaveis para número de alunos na terceira serie, quantidade de livros lido por mês, e se gosta ou nao de fazer redação 
+(ALUNO,LIVROS,REDACAO)
+2-definir e criar variável flag (flag <- 1)
+3-enquanto o valor de flag for igual a 1 faça
+	4-entrada da serie do aluno 
+	5-entrada de numero de livros lido por mês (LIVROS)
+	6-entrada do gosto por redação (REDACAO)
+	7-se aluno for igual a 3 faça
+		8-incrementar a var de contagem(ALUNOS3)
+		9-se redação igual a 0 faça (REDACAO==0)
+			10-incrementar contador de alunos da 3 serie e que nao gosta de redação (ALUNOS3NR)
+	11-se aluno for igual a 4 faça
+		12-incrimentar contador de alunos da quarta serie (ALUNOS4)
+			13-se maior quantidade de livros for menor que livros lido (MLIVROS>LIVROS)
+				14-atribuir quantidade de livros para var mlivros (MLIVROS=LIVROS)
+	15-incrementar contador de alunos (ALUNOSTOTAL)
+	16-entrada se deseja continuar 1 para sim e 0 para não (ESCOLHA)
+	17-se escolha for igual a 0 faça
+		18-defina valor de flag 0 (flag = 0)
+	19-se não
+		20-apresentar "proximo aluno."
+21-calcular a porccentagem de alunos que nao gostam de redação na terceira serie (PCNREDACAO=(ALUNOS3NR/ALUNOSTOTAL)*100)
+22-apresentar maior quantidade de livros lido por uma aluno (MLIVROS)
+23-apresentar a quantidade de alunos da terceira serie (ALUNOS3)
+24-apresentar o percentual de alunos que nao gosta de redação (PCNREDACAO)
+25-encerrar o programa
