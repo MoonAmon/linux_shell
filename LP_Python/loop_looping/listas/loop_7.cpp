@@ -25,27 +25,23 @@ int main(int argc, char const *argv[])
         if (serie == 3)
         {
             alunos3++;
-
             if (redacao == 0)
             {
                 alunos3nr++;
             }
-            
         }
 
         if (serie == 4)
         {
             alunos4++;
-
             if (mlivros<livros)
             {
                 mlivros=livros;
             }
-            
         }
 
-        livrostotal+=livros;
-        alunostotal++;
+        livrostotal+=livros;    //total dos livros para o calculo do percentual livros
+        alunostotal++;          //contagem dos alunos
 
         printf("Deseja continuar (1)sim, (0)não : ");
         scanf("%d",&escolha);
@@ -55,8 +51,7 @@ int main(int argc, char const *argv[])
             flag=0;
         } else {
             printf("Próximo aluno...\n");
-        }
-        
+        } 
     }
     
     float PCnredacao = ((float)alunos3nr/alunos3)*100;

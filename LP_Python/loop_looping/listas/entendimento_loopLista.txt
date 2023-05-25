@@ -123,3 +123,9 @@
 23-apresentar a quantidade de alunos da terceira serie (ALUNOS3)
 24-apresentar o percentual de alunos que nao gosta de redação (PCNREDACAO)
 25-encerrar o programa
+
+--------------------
+
+1-definir variaveis para o id, valor e percentual de aumento (ID,VALOR,aumento)
+2-faça enquanto id for diferente de 0 (id != 0)
+	3-entrada do id do produto

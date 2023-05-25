@@ -28,7 +28,6 @@ int main(int argc, char const *argv[])
             idadeold=idade;
             idold=cont;
         }
-
         if (op<=5)
         {
             totalbad++;
