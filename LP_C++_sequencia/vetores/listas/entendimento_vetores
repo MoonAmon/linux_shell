@@ -1,0 +1,38 @@
+
+
+1-para i = 0 enquanto i < 10 de 1 em 1 faça
+    2-entrada dos salarios (sal[i])
+    3-se sal[i] for maior que msalario faça
+        4-atribuir salario para msalario (msalario=salario)
+5-apresentar maior salario (sal)
+6-encerrar o programa
+------------
+
+1-para i=0 enquanto i<5 de 1 em 1 faça
+    2-entrada salarios (sal[i])
+    3-se salario for menor que 1000 faça (sal<1000)
+        4-calcular o aumento de 10% e autualize o salario correspondente
+5-para i=0 enquanto i<5 de 1 em 1 faça
+    6-apresentar a lista de salarios atualizada
+7-encerrar o programa
+---------------------------------
+
+1-entrada de n numeros para o vetor 
+2-para i = 0 enquanto i < n de 1 em 1 faça
+    3-entrada dos valores para o vetor numeros
+4-para i = 0 enquanto i < n de 1 em 1 faça
+    5-calcular a soma dos valores do vetor
+    6-calcular a media aritmética dos valores
+7-apresentar a média
+8-encerrar programa
+--------------------------------
+
+1-entrada do número do tamanho dos vetores
+2-para i = 0 enquanto i < n de 1 em 1 faça
+    3-entrada das notas dos G1 e G2 para cada n alunos
+4-para i = 0 enquanto i < n faça
+    5-calcular a soma das notas dos alunos individualmente e logo depois armazenar em um vetor
+    6-calcular a media dos alunos e armazenar em outro vetor dividindo por 2
+5-para i = 0 enaquanto i < n  1 em 1 faça
+    7-apresentar notas e medias dos alunos
+8-encerrar programa
