@@ -23,7 +23,6 @@ int main(int argc, char const *argv[])
 		if (sexo=='m')
 		{
 		Qmen++;
-
 		}		
 		if ((sexo=='m')&&(Qlivros<5))
 		{
@@ -39,12 +38,12 @@ int main(int argc, char const *argv[])
 		}
 		
 	} while (idade>=0);
-	float Pcnlivros=(Qnlivros/Qentevis)*100;
-	float MDmen5=Qmen5/Qmen;
-	printf("\nQuantidade total de livros com menos de 10 anos: %d\n",Qlivros10);
-	printf("\nQuatidades de mulheres que leram 5 livros ou mais: %d\n",Qmulheres5);
-	printf("\nMédia de idade dos homens que leram 5 livros ou mais: %.2f\n",MDmen5);
-	printf("\nPercentual de pessoas que não leram livros: %.2f\n",Pcnlivros);
+	float Pcnlivros=(float)(Qnlivros/Qentevis)*100;
+	float MDmen5=(float)Qmen5/Qmen;
+	printf("\nQuantidade total de livros com menos de 10 anos: %d",Qlivros10);
+	printf("\nQuatidades de mulheres que leram 5 livros ou mais: %d",Qmulheres5);
+	printf("\nMédia de idade dos homens que leram 5 livros ou mais: %.2f",MDmen5);
+	printf("\nPercentual de pessoas que não leram livros: %.2f",Pcnlivros);
 
 
 	return 0;
