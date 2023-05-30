@@ -1,130 +1,51 @@
-1-definir uma variavel para denominador DEN
-2-definir uma variavel para divisor DIV
-3-iniciar o denominador em 1 (DEN~1)
-4-inciar o divisor em 1 (DIV~1)
-5-enquanto a variável do denominador for menor ou igual a 99 e a variável do divisor for menor ou a 50 repetir (DEN<=99 & DIV<=50)
-	6-calcular a divisao de den por div (x=den/div)
-	7-apresentar resultado ("X")
-	8-incrementar em 1 o divisor (DIV+=1)
-	9-calcular o novo valor do denominador (DEN+=2)
-10-encerrar o programa
+#include <stdio.h>
+#include <stdlib.h>
 
---------------------------
+int main(int argc, char const *argv[])
+{
+	int idade=0,Qlivros=0,Qlivros10=0,Qmulheres5=0,Qentevis=0,Qnlivros=0,mdIdade=0,Qmen=0,Qmen5=0;
+	char sexo;
+	
+	do
+	{
+		printf("\nDigite o sexo do entrevistado: ");
+		scanf("%s",&sexo);
+		printf("\nDigite a idade do entrevistado: ");
+		scanf("%d",&idade);
+		printf("\nDigite a quantidade de livros lidos em 2006:");
+		scanf("%d",&Qlivros);
+		Qentevis++;
+		mdIdade+=idade;
+		if (idade<10)
+		{
+			Qlivros10+=Qlivros;
+		}
+		if (sexo=='m')
+		{
+		Qmen++;
 
-1-definir var int para a entrada do numero pelo usuario N
-	2-faça enquanto a var N for maior ou igual a 0 (N>=0)
-	3-calcular a soma do numeros da var N e atribua o resultado a var int X
-	4-incrementar em 1 a variável de controle do loop (I++)
-5-calcule a media dos valores de entrada e atribua a var float MD (MD=X/I)
-6-apresentar a soma e a media dos valores (X,MD)
-7-encerrar o programa
+		}		
+		if ((sexo=='m')&&(Qlivros<5))
+		{
+			Qmen5++;
+		}
+		if ((sexo=='f')&&(Qlivros>=5))
+		{
+			Qmulheres5+=1;
+		}
+		if (Qlivros==0)
+		{
+			Qnlivros++;
+		}
+		
+	} while (idade>=0);
+	float Pcnlivros=(Qnlivros/Qentevis)*100;
+	float MDmen5=Qmen5/Qmen;
+	printf("\nQuantidade total de livros com menos de 10 anos: %d\n",Qlivros10);
+	printf("\nQuatidades de mulheres que leram 5 livros ou mais: %d\n",Qmulheres5);
+	printf("\nMédia de idade dos homens que leram 5 livros ou mais: %.2f\n",MDmen5);
+	printf("\nPercentual de pessoas que não leram livros: %.2f\n",Pcnlivros);
 
-----------------------
 
-1-definir var int para a entrada dos valores N
-2-para I=1 até 10 faça
-	3-entrada do valor para var N
-	4-calcular resto por 2 para verificar se o valor é impar ou par (RESTO=N%2)
-	5-se resto for igual a 0 faça (RESTO==0)
-		6-incrementar em 1 a var de contagem para os numeros pares (CONTP=+1)
-		7-calcular a soma dos numeros pares e atribuir o resultado em var (SOMAP+=N)
-	8-senão faça 
-		9-incrementar em 1 a var de contagem para impares (CONTI+=1)
-		10-calcular a soma dos impares para calculo de media (SOMAI+=N)
-12-encerrar o programa
-11-apresentar resultados
-
------------------------------------
-
-1-definir uma var para a entrada do codigo do funcionario COD
-2-definir uma var para a entrada do números de horas trabalhadas HORA
-3-definir uma var para a entrada do números de dependentes do funcionario DEP
-4-para I=1 até 10 faça
-	5-entrada do codigo de funcionario 
-	6-entrada do número de horas trabalhadas 
-	7-entrada dos dependentes 
-	8-calcular o salario bruto do func multiplicando as horas por 12 e os depen por 40 (SALBR=(HORAS*12)+(DEP*40))
-	9-calcular o desconto do INSS e do IR (DESCO=(SALBR*0.085)+(SALBR*0.05))
-	10-calcular o desconto final dos impostos sobre o salario bruto (SALLIQ=SALBR-DESCO)
-	11-apresentar resultados (COD,DESCO,SALLQ)
-
-------------------------------------------------------
-
-1-faça enquanto idade>=0
-2-entrada dos dados dos entrevistados sendo a variavel do sexo sendo string SEXO,IDADE,LIVROS
-4-calcular a quantidade de entrevistados mulheres,homens e de pessoas que nao leram livros (CONTOTAL,CONTFTOTAL,CONTMTOTAL,NLIVROS)
-5-se a idade do entravistado for menor que 10 faça (IDADE>10)
-	6-calcular a quantidade de livros lidos (TOTALPQ+=LIVROS)
-7-se o sexo do entrevistado for igual a feminino e a quantidade de livros lidos maior ou igual a 5 faça (SEXO==F && LIVROS>=5)
-	8-incrementar a var de contagem das mulheres que leram mais de 5 (CONTF+=1)
-9-se o sexo do entrevistado for igual a masculino e o numeros de livros lidos menor que 5 faça (SEXO==M && LIVROS<5)
-	10-incrementar a var de contagem dos homens que leram menos de 5 (CONTM_N+=1)
-	11-calcular somando a idade desses entrevistados (IDADEMENL)
-12-se entravistado não tiver lido nenhum livro no ano de 2006 faça
-	13-incrementar a var de contagem de pessoas que nao leram livros (CONTN_LIVROS+=1)
-13-calcular media da idade dos homens que leram menos que 5 livros (MDIDADEMEN = IDADEMENL/CONTM_N)
-14-calcular o percentual de pessoas que nao leram livros (MDNL=CONTFTOTAL/NLIVROS)
-15-apresentar o resultado da quantidade de mulheres que leram 5 livros ou mais (CONTF)
-16-apresentar resultado dessa media (MDIDADEMEN)
-17-apresentar o resultado da quantidade de livros lidos pelos entrevistados menores de 10 anos(TOTALPQ)
-18-apresentar resultado dessa media
-19-finalizar o programa
-
--------------------------------------
-
-1-definir variáveis para numero de pessoas (int), idade (int), identificador(string) e opinião(int) (PESSOAS,IDADE,NICK,OP)
-2-definir variável para controle de repetição (I)
-3-para i=1 até 10 faça
-	4-entrada da idade da pessoa (IDADE)
-	5-se a idade da pessoa for maior que idade mais velha faça IDADE>IDADEOLD
-		6-atribua idade na variavel do mais velho (IDADEOLD=IDADE)
-		7-atribua identificador na variável do mais velho (NICKOLD=NICK)
-	8-entrada da identificação da pessoa (NICK)
-	9-entrada da opinião (OP)
-	10-se opinião for 0>OP ou 10<OP faça
-		11-apresentar resposta de número inválido
-	12-se opinião for 5>=OP faça
-		13-incrementar contador de pessoas que colocaram nota baixa para a peça(TOTALBAD++)
-	14-incrementar contador de pessoas total (TOTAL++)
-	15-calcular o total das idades das pessoas (TOTALID+=IDADE)
-16-calcular media da idade das pessoas que responderam o questionário (MD=TOTALID/TOTAL)
-17-calcular a porcentagem das pessoas que colocaram 5 ou menos (PCBAD=(TOTALBAD/TOTAL)*100)
-18-apresentar quantidade de pessoas que responderam (TOTAL)
-19-apresentar média da idade das pessoas (MD)
-20-apresentar porccentagem das pessoas que responderam com nota baixa (PCBAD)
-21-apresntar a pessoa mais velha a responder (NICKOLD,IDADEOLD)
-22-finalizar o programa
-
-------------------------------
-
-1-definir as variaveis para número de alunos na terceira serie, quantidade de livros lido por mês, e se gosta ou nao de fazer redação 
-(ALUNO,LIVROS,REDACAO)
-2-definir e criar variável flag (flag <- 1)
-3-enquanto o valor de flag for igual a 1 faça
-	4-entrada da serie do aluno 
-	5-entrada de numero de livros lido por mês (LIVROS)
-	6-entrada do gosto por redação (REDACAO)
-	7-se aluno for igual a 3 faça
-		8-incrementar a var de contagem(ALUNOS3)
-		9-se redação igual a 0 faça (REDACAO==0)
-			10-incrementar contador de alunos da 3 serie e que nao gosta de redação (ALUNOS3NR)
-	11-se aluno for igual a 4 faça
-		12-incrimentar contador de alunos da quarta serie (ALUNOS4)
-			13-se maior quantidade de livros for menor que livros lido (MLIVROS>LIVROS)
-				14-atribuir quantidade de livros para var mlivros (MLIVROS=LIVROS)
-	15-incrementar contador de alunos (ALUNOSTOTAL)
-	16-entrada se deseja continuar 1 para sim e 0 para não (ESCOLHA)
-	17-se escolha for igual a 0 faça
-		18-defina valor de flag 0 (flag = 0)
-	19-se não
-		20-apresentar "proximo aluno."
-21-calcular a porccentagem de alunos que nao gostam de redação na terceira serie (PCNREDACAO=(ALUNOS3NR/ALUNOSTOTAL)*100)
-22-apresentar maior quantidade de livros lido por uma aluno (MLIVROS)
-23-apresentar a quantidade de alunos da terceira serie (ALUNOS3)
-24-apresentar o percentual de alunos que nao gosta de redação (PCNREDACAO)
-25-encerrar o programa
-
---------------------
-
-1-definir variaveis para o id, valor e percentual de aumento (ID,VALOR,aumento)
-2-faça enquanto id for diferente de 0 (id != 0)
+	return 0;
+}
