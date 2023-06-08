@@ -1,4 +1,4 @@
-A=list(range(10,25))
+A=list(range(1,80))
 B=[]
 X=1
 e=1

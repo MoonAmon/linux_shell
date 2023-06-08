@@ -7,12 +7,12 @@ int main(int argc, char const *argv[])
     int resto = 0;
     printf(" ");
     scanf("%d",&n);
-    for (int i = n; i < 0; i--)
+    for (int i = n; i > 0; i--)
     {
         resto=n%2;
         if (resto==0)
         {
-            printf("%d",n);
+            printf("%d ",n);
         } else {
             printf("%d\n",n);
         }
