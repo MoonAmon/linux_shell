@@ -1,3 +1,0 @@
-/home/thiago/Desktop/repo_git/Logica_Prog_C-/cmake-build-debug/CMakeFiles/Logica_Prog_C_.dir
-/home/thiago/Desktop/repo_git/Logica_Prog_C-/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/thiago/Desktop/repo_git/Logica_Prog_C-/cmake-build-debug/CMakeFiles/rebuild_cache.dir
