@@ -3,16 +3,16 @@
 
 int main(int argc, char const *argv[])
 {
-    int vetor[10],count;
+    float vetor[10];
     
 
-    for (count = 0; count < 10; count++)
+    for (int count = 0; count < 10; count++)
     {
         printf("\nDigite um número inteiro: ");
         scanf("%d",vetor[count]);
     } 
     
-    for (count = 0; count < 10; count++)
+    for (int count = 0; count < 10; count++)
     {
         if (vetor[count]>0)
         {
