@@ -3,20 +3,18 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[8];
-    int B[8];
-
-    for (int i = 0; i < 8; i++)
-    {
-        printf("\nDigite os elementos do vetor A num %d : ",i);
-        scanf("%d",&A[i]);
-    }
+    int A[8]{1,2,4,5,6,8,6,4},B[8];
     for (int i = 0; i < 8; i++)
     {
         B[i]=A[i]*3;
-        printf("Resultado índicev%d : %d\n",i,B[i]);
     }
     
+    for (int i = 0; i < 8; i++)
+    {
+        printf("%d\n",B[i]);
+    }
+    
+  
     
     return 0;
 }

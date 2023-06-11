@@ -3,21 +3,19 @@
 
 int main(int argc, char const *argv[])
 {
-    float A[20],B[20],C[20];
-
-    for (int i = 0; i < 20; i++)
-    {
-        printf("\nElementos da matriz A índice= %d:",i);
-        scanf("%f",&A[i]);
-        printf("\nElementos da matriz B índice= %d:",i);
-        scanf("%f",&B[i]);
-    }
-    for (int i = 0; i < 20; i++)
+    int C[10];
+    int A[10]{20,12,45,12,43,2,1,34,54,12},B[10]{12,13,43,21,54,34,21,34,53,21};
+    for (int i = 0; i < 10; i++)
     {
         C[i]=A[i]-B[i];
-        printf("Resultados da matriz C índice= %d: %.2f\n",i,C[i]);
+
     }
-        
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d\n",C[i]);
+    }
+    
+
 
     return 0;
 }
