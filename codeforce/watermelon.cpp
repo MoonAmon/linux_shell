@@ -5,7 +5,6 @@
             
             int resto,w;
             
-            printf("Hello world!");
             scanf("%d",&w);
             
             resto = w/2;
