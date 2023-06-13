@@ -7,10 +7,11 @@ somatotal=0
 cont=0
 
 for num in sequencia:
+    if soma==0 and num == K:
+        cont+=1
     somatotal+=num
     if somatotal==K:
         cont+=1
     elif somatotal>K:
         somatotal=0
-    print("somatotal: %d\nsoma: %d"%(somatotal,soma))
 print(cont)
