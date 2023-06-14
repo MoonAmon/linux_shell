@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
 		}
 		if (sexo=='m')
 		{
-		Qmen++;
+			Qmen++;
 		}		
 		if ((sexo=='m')&&(Qlivros<5))
 		{
@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
 		}
 		if ((sexo=='f')&&(Qlivros>=5))
 		{
-			Qmulheres5+=1;
+			Qmulheres5++;
 		}
 		if (Qlivros==0)
 		{

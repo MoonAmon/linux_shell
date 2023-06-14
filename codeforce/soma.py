@@ -9,6 +9,7 @@ cont=0
 for num in sequencia:
     if soma==0 and num == K:
         cont+=1
+        
     somatotal+=num
     if somatotal==K:
         cont+=1
