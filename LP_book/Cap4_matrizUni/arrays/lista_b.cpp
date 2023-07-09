@@ -13,7 +13,6 @@ int main(int argc, char const *argv[])
     {
         printf("%d\n",B[i]);
     }
-    
   
     
     return 0;

@@ -5,6 +5,7 @@ int main(int argc, char const *argv[])
 {
     float matrizA[20], matrizB[20]; 
     int i;
+    system("color70");
 
     for (i = 0; i < 20; i++)
     {
@@ -24,8 +25,6 @@ int main(int argc, char const *argv[])
     {
         printf("A: %.2f  B: %.2f\n",matrizA[i],matrizB[i]);
     }
-    
-    
     
     return 0;
 }

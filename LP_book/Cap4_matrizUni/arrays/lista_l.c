@@ -18,7 +18,5 @@ int main(int argc, char const *argv[])
         printf("%d, %d\n",matrizA[i], matrizB[i]);
     }
     
-    
-        
     return 0;
 }
