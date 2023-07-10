@@ -7,76 +7,103 @@ float pesoIdeal(char sexo, float altura);
 void pular2Linha(void);
 void pular1Linha(void);
 
-
 int main(int argc, char const *argv[])
 {
-    char opçao;
-    
-    while (opçao != 's')
-    {
-        printf("\n Digite umas da opções: \n");
-        pular2Linha();
-        printf("a) Area de um trapezio \n");
-        pular1Linha();
-        printf("b) Fatorial \n");
-        pular1Linha();
-        printf("c) Peso corporal ideal \n");
-        pular1Linha();
-        printf("s) sair \n");
-        scanf("%c",&opçao);
+    char opcao;
 
-        if (opçao == 'a')
+    do
+    {
+        printf("\nDigite uma das opções:\n");
+        pular2Linha();
+        printf("a) Área de um trapézio\n");
+        pular1Linha();
+        printf("b) Fatorial\n");
+        pular1Linha();
+        printf("c) Peso corporal ideal\n");
+        pular1Linha();
+        printf("s) Sair\n");
+        scanf(" %c", &opcao); 
+        pular2Linha();
+
+        if (opcao == 'a')
         {
             float baseMenor, baseMaior, altura;
 
-            printf("Digite a base menor do trapezio: \n");
-            scanf("%f",&baseMenor);
+            printf("Digite a base menor do trapézio:\n");
+            scanf("%f", &baseMenor);
             pular1Linha();
 
-            printf("Digite a base maior do trapezio: \n");
-            scanf("%f",&baseMaior);
+            printf("Digite a base maior do trapézio:\n");
+            scanf("%f", &baseMaior);
             pular1Linha();
 
-            printf("Digite a altura do trapezio: \n");
-            scanf("%f",&altura);
+            printf("Digite a altura do trapézio:\n");
+            scanf("%f", &altura);
             pular1Linha();
 
-            while (opçao != '0')
+            do
             {
-                printf("Resultado: %.2f\n Digite 0 para sair!\n", areaTrapezio(baseMenor,baseMaior,altura));
-                scanf("%c",&opçao);
-            }
-            
+                printf("Resultado: %.2f\nDigite 0 para sair!\n", areaTrapezio(baseMenor, baseMaior, altura));
+                scanf(" %c", &opcao); 
+                getchar();
 
+            } while (opcao != '0');
         }
-        
-        if (opçao == 'b')
+        else if (opcao == 'b')
         {
             int numero;
 
-            printf("Digite um número: \n");
-            scanf("%d",&numero);
-
+            printf("Digite um número:\n");
+            scanf("%d", &numero);
             pular2Linha();
-            printf("Resultado do fatorial: %d\n",fatorial(numero));
-            system("pause");
 
+            do
+            {
+                printf("Resultado: %d\nDigite 0 para sair!\n", fatorial(numero));
+                scanf(" %c", &opcao);
+                getchar();
+
+            } while (opcao != '0');
             
+
+        }
+        else if (opcao == 'c')
+        {
+            char sexo;
+            float altura;
+
+            printf("Digite seu sexo f ou m: \n");
+            scanf(" %c", &sexo);
+            getchar();
+            pular1Linha();
+
+            printf("Digite sua altura: \n");
+            scanf("%f", &altura);
+            pular1Linha();
+
+             do
+            {
+                printf("Resultado: %.2f\nDigite 0 para sair!\n", pesoIdeal(sexo, altura));
+                scanf(" %c", &opcao);
+                getchar();
+
+            } while (opcao != '0');
+        } else {
+
+        printf("Opção inválida, digite outra opção!\n");
+        
         }
         
 
-    }
-    
-    
+    } while (opcao != 's');
 
     return 0;
 }
 
 float areaTrapezio(float baseMaior, float baseMenor, float altura)
 {
-    float area = ((baseMaior + baseMenor) * altura)/2;
+    float area = ((baseMaior + baseMenor) * altura) / 2;
     return area;
-
 }
 
 int fatorial(int numero)
@@ -86,7 +113,7 @@ int fatorial(int numero)
     {
         fat *= i;
     }
-    
+
     return fat;
 }
 
@@ -97,23 +124,21 @@ float pesoIdeal(char sexo, float altura)
     if (sexo == 'f')
     {
         peso = 62.1 * altura - 44.7;
-    } else {
+    }
+    else
+    {
         peso = 72.7 * altura - 58;
     }
 
     return peso;
-    
 }
 
 void pular2Linha(void)
 {
-    for (int i = 0; i < 3; i++)
-    {
-        printf(" \n");
-    }
+    printf("\n\n");
 }
 
 void pular1Linha(void)
 {
-    printf(" \n");
+    printf("\n");
 }
