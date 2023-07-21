@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thiago"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-20 09:18:01 "/>
+        <attribute name="created" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTIwOyIwOTowNjozOCAiOzI4NTI="/>
+        <attribute name="edited" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTIwOyIwOToxODowMSAiOzE7Mjk1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A[4][5]" type="Integer" array="False" size=""/>
+            <for variable="y" start="0" end="4" direction="inc" step="1">
+                <for variable="x" start="0" end="3" direction="inc" step="1">
+                    <input variable="A[x][y]"/>
+                </for>
+            </for>
+            <for variable="y" start="0" end="4" direction="inc" step="1">
+                <for variable="x" start="0" end="3" direction="inc" step="1">
+                    <input variable="A[x][y]"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

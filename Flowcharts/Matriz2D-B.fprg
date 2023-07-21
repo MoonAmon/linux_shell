@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thiago"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-20 09:06:36 "/>
+        <attribute name="created" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTIwOyIwNjo0Mzo1NiAiOzI4NTA="/>
+        <attribute name="edited" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTIwOyIwOTowNjozNiAiOzE7Mjk1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="True" size="[2][2]"/>
+            <for variable="y=coluna" start="0" end="1" direction="inc" step="1">
+                <for variable="x" start="0" end="6" direction="inc" step="1">
+                    <if expression="y == 0">
+                        <then>
+                            <assign variable="C[x][y]" expression="A[x]"/>
+                        </then>
+                        <else>
+                            <assign variable="C[x][y]" expression="B[x]"/>
+                        </else>
+                    </if>
+                </for>
+            </for>
+            <for variable="y" start="0" end="1" direction="inc" step="1">
+                <for variable="x" start="0" end="6" direction="inc" step="1">
+                    <output expression="C[x][y]" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

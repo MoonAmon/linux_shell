@@ -1,20 +1,31 @@
 import random
 
-def matrizNumAleatorio(matriz):
-    num = 0
-    tamanho = len(matriz)
+def matrizUniAleatorio(tamanho):
+    matriz= list(range(tamanho))
     for num in range(tamanho):
         matriz[num] = random.randint(1, 999)
     return matriz
 
-def matrizBiAleatorio(tamanhoX, tamanhoY, ateNum):
-    matriz = [[0 for i in range(tamanhoX)] for j in range(tamanhoY)]
-    x = 0
-    y = 0
-    for x in range(tamanhoX):
-        for y in range(tamanhoY):
+def matrizUniOrdinaria(tamanho, numero):
+    matriz= list(range(tamanho))
+    for num in range(tamanho):
+        matriz[num] = numero
+    return matriz
+
+def matrizBiAleatorio(NumColunas, NumLinhas, ateNum):
+    matriz = [[0 for i in range(NumColunas)] for j in range(NumLinhas)]
+    for y in range(NumColunas):
+        for x in range(NumLinhas):
             matriz[x][y] = random.randint(0, ateNum)
     return matriz
+
+def matrizBiOrdinaria(NumColuna, NumLinhas, elemento):
+    matriz = [[0 for i in range(NumColuna)] for j in range(NumLinhas)]
+    for y in range(NumColuna):
+        for x in range(NumLinhas):
+            matriz[x][y] = elemento
+    return matriz
+
 
 def nomeAleatorio(tamanho):
     vogais = 'aeiou'
@@ -30,5 +41,7 @@ def nomeAleatorio(tamanho):
 def printMatrizBi(matriz, tamanhoElemento):
     for linha in matriz:
         for elemento in linha:
-            print(str(elemento).center(tamanhoElemento,"."), end="  ")
-        print()
+            print(str(elemento).center(tamanhoElemento), end="  ")
+        print()  
+    print()
+   

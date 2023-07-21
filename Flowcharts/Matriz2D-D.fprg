@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thiago"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-20 09:41:25 "/>
+        <attribute name="created" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTIwOyIwOToxODowMyAiOzI4NDc="/>
+        <attribute name="edited" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTIwOyIwOToyNTowNiAiOzE7VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTIwOyIwOTowNjozOCAiOzU4Njc="/>
+        <attribute name="edited" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTIwOyIwOTo0MToyNSAiOzE7Mjk1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fat" type="Integer" array="False" size=""/>
+            <assign variable="fat" expression="0"/>
+            <declare name="A" type="Integer" array="True" size="10"/>
+            <declare name="C" type="Integer" array="True" size="10,3"/>
+            <for variable="y" start="0" end="2" direction="inc" step="1">
+                <for variable="x" start="0" end="9" direction="inc" step="1">
+                    <if expression="y == 0">
+                        <then>
+                            <assign variable="C[x][0]" expression="5 + A[x]"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="y == 1">
+                        <then>
+                            <for variable="i" start="1" end="A[x]" direction="inc" step="1">
+                                <assign variable="fat" expression="fat*i"/>
+                            </for>
+                            <assign variable="C[x][1]" expression="fat"/>
+                            <assign variable="fat" expression="0"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="y == 2">
+                        <then>
+                            <assign variable="C[x][2]" expression="A[x]*A[x]"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
