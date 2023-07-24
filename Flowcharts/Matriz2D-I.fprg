@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thiago"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-24 02:35:56 PM"/>
+        <attribute name="created" value="dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAyOjE3OjU3IFBNOzI4NTY="/>
+        <attribute name="edited" value="dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAyOjIxOjM2IFBNOzI7dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAyOjA2OjI1IFBNOzU4NjU="/>
+        <attribute name="edited" value="dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAyOjM1OjU2IFBNOzE7Mjk2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="matrizBiOrdinaria, printMatrizBi"/>
+            <declare name="MatrizA[7][7]" type="Integer" array="False" size=""/>
+            <declare name="MatrizB[7][7]" type="Integer" array="False" size=""/>
+            <declare name="cont" type="Integer" array="False" size=""/>
+            <declare name="fat" type="Integer" array="False" size=""/>
+            <assign variable="fat" expression="1"/>
+            <assign variable="cont" expression="0"/>
+            <for variable="y" start="0" end="6" direction="inc" step="1">
+                <for variable="x" start="0" end="6" direction="inc" step="1">
+                    <if expression="x == y &amp;&amp; (x % 2 != 0 &amp;&amp; y % 2 != 0)">
+                        <then>
+                            <for variable="i" start="matrizA[x][y]" end="1" direction="dec" step="1">
+                                <assign variable="fat" expression="fat * i"/>
+                            </for>
+                            <assign variable="matrizB[x][y]" expression="fat"/>
+                            <assign variable="fat" expression="1"/>
+                        </then>
+                        <else>
+                            <for variable="i" start="1" end="matrizA[x][y]" direction="inc" step="1">
+                                <assign variable="cont" expression="cont + i"/>
+                            </for>
+                            <assign variable="matrizB[x][y]" expression="cont"/>
+                            <assign variable="cont" expression="0"/>
+                        </else>
+                    </if>
+                </for>
+            </for>
+            <call expression="printMatrizBi"/>
+        </body>
+    </function>
+</flowgorithm>

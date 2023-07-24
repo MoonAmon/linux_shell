@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thiago"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-24 03:20:24 PM"/>
+        <attribute name="created" value="dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAzOjA5OjEyIFBNOzI4NDk="/>
+        <attribute name="edited" value="dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAzOjA5OjM0IFBNOzE7dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAyOjA2OjI1IFBNOzU4Njk="/>
+        <attribute name="edited" value="dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAzOjIwOjI0IFBNOzE7Mjk1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="matrizBiOrdinaria, printMatrizBi"/>
+            <declare name="MatrizA[5][5]" type="Integer" array="False" size=""/>
+            <declare name="somatorio" type="Integer" array="False" size=""/>
+            <assign variable="somatorio" expression="0"/>
+            <for variable="y" start="0" end="4" direction="inc" step="1">
+                <for variable="x" start="0" end="4" direction="inc" step="1">
+                    <if expression="x == y &amp;&amp; x % 2 != 0 &amp;&amp; y % 2 != 0">
+                        <then>
+                            <assign variable="somatorio" expression="matrizA[x][y] + somatorio"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <call expression="printMatrizBi"/>
+            <output expression="somatorio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

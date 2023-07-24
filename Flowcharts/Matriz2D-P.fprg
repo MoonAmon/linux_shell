@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thiago"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-24 04:19:05 PM"/>
+        <attribute name="created" value="dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAzOjQxOjQ5IFBNOzI4NTU="/>
+        <attribute name="edited" value="dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAzOjQxOjUxIFBNOzE7dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzAzOjA5OjEyIFBNO01hdHJpejJELU0uZnByZzs3Mjcx"/>
+        <attribute name="edited" value="dGhpYWdvO1RISUFHTy0yNzBFNUstMjsyMDIzLTA3LTI0OzA0OjE5OjA1IFBNOzE7Mjk2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="matrizBiOrdinaria, printMatrizBi"/>
+            <declare name="MatrizA[10][7]" type="Integer" array="False" size=""/>
+            <declare name="contadorNumPares" type="Integer" array="False" size=""/>
+            <declare name="contadorNumImpares" type="Integer" array="False" size=""/>
+            <declare name="porcentagemNumPares" type="Real" array="False" size=""/>
+            <declare name="porcentagemNumImpares" type="Real" array="False" size=""/>
+            <assign variable="contadorNumPares" expression="0"/>
+            <assign variable="contadorNumImpares" expression="0"/>
+            <for variable="y" start="0" end="6" direction="inc" step="1">
+                <for variable="x" start="0" end="9" direction="inc" step="1">
+                    <if expression="matrizA[x][y] % 2 == 0">
+                        <then>
+                            <assign variable="contadorNumPares" expression="contadorNumPares + 1"/>
+                        </then>
+                        <else>
+                            <assign variable="contadorNumImpares" expression="contadorNumImpares + 1"/>
+                        </else>
+                    </if>
+                </for>
+            </for>
+            <assign variable="porcentagemNumPares" expression="(contadorNumPares/70)*100"/>
+            <assign variable="porcentagemNumImpares" expression="(contadorNumImpares/70)*100"/>
+            <output expression="porcentagemNumPares, poecentagemNumImpares" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
