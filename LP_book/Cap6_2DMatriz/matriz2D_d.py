@@ -1,6 +1,6 @@
 from makeMatriz import printMatrizBi,matrizBiOrdinaria,matrizUniOrdinaria
 fat = 1
-matrizA = matrizUniOrdinaria(10,5)
+matrizA = matrizUniOrdinaria(10,20)
 matrizC = matrizBiOrdinaria(3,10,0)
 
 for y in range(3):

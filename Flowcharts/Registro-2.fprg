@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thiago"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-26 12:51:55 "/>
+        <attribute name="created" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTI2OyIxMjoyOTo0MCAiOzI4NTA="/>
+        <attribute name="edited" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTI2OyIxMjo1MTo1NSAiOzE7Mjk1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <while expression="opcao != 4">
+                <input variable="opcao"/>
+                <if expression="opcao == 1">
+                    <then>
+                        <for variable="i" start="0" end="19" direction="inc" step="1">
+                            <input variable="nome[i].aluno"/>
+                            <for variable="j" start="0" end="3" direction="inc" step="1">
+                                <input variable="nome[i].notas[j]"/>
+                            </for>
+                        </for>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="opcao == 1">
+                    <then/>
+                    <else/>
+                </if>
+                <if expression="opcao == 1">
+                    <then/>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
