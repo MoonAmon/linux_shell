@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thiago"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-27 09:13:27 "/>
+        <attribute name="created" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTI2OyIxMjoyOTo0MCAiOzI4NTA="/>
+        <attribute name="edited" value="VGhpYWdvO0RFU0tUT1AtOE5GSkJFNzsyMDIzLTA3LTI3OyIwOToxMzoyNyAiOzI7Mjk2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcao" type="Integer" array="False" size=""/>
+            <while expression="opcao != 4">
+                <input variable="opcao"/>
+                <if expression="opcao == 1">
+                    <then>
+                        <for variable="i" start="0" end="19" direction="inc" step="1">
+                            <input variable="nome[i].aluno"/>
+                            <for variable="j" start="0" end="3" direction="inc" step="1">
+                                <input variable="nome[i].notas[j]"/>
+                            </for>
+                        </for>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="opcao == 1">
+                    <then>
+                        <declare name="fim" type="Integer" array="False" size=""/>
+                        <declare name="inicio" type="Integer" array="False" size=""/>
+                        <declare name="soma" type="Real" array="False" size=""/>
+                        <declare name="media" type="Real" array="False" size=""/>
+                        <declare name="pesquisa" type="String" array="False" size=""/>
+                        <assign variable="inicio" expression="0"/>
+                        <assign variable="final" expression="19"/>
+                        <input variable="pesquisa"/>
+                        <while expression="comeco &lt; final">
+                            <if expression="comeco &gt; final">
+                                <then>
+                                    <assign variable="meio" expression="(inicio+fim)//2"/>
+                                    <if expression="pesquisa == nome[meio].aluno">
+                                        <then>
+                                            <for variable="i" start="0" end="3" direction="inc" step="1">
+                                                <assign variable="soma" expression="nome[pesquisa],nota[i] + soma"/>
+                                            </for>
+                                            <assign variable="media" expression="soma/4"/>
+                                            <output expression="nome[pesquisa].aluno" newline="True"/>
+                                            <output expression="media" newline="True"/>
+                                            <for variable="i" start="0" end="3" direction="inc" step="1">
+                                                <output expression="nome[pesquisa].nota[i]" newline="True"/>
+                                            </for>
+                                        </then>
+                                        <else>
+                                            <if expression="pesquisa &lt; nome[meio].aluno">
+                                                <then/>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </while>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="opcao == 1">
+                    <then/>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
