@@ -25,7 +25,11 @@ def pesquisa(nomePesquisa):
     achou = False
     cont = 0
     while achou is False and cont < 5:
-        pass
+        if nomePesquisa == diario[cont].nome:
+            achou = True
+        else:
+            cont+=1
+
 
 
 def exibir():
