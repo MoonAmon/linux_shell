@@ -16,9 +16,9 @@ while x < len(lista2):
 x = 0
 
 while True:
-   l.append(lista1[x])
-    lista3.append(lista2[x])
-    x += 1
-    if x == len(lista1):
+   lista3.append(lista1[x])
+   lista3.append(lista2[x])
+   x += 1
+   if x == len(lista1):
         print(lista3)
         break
