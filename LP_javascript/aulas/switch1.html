@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var area = prompt("Area de entraga: "); 
+        var tax_entrega = 0;
+
+        switch (area.toLowerCase()) {
+            case "estrutural":
+                tax_entrega = 5.00;
+                break;
+            case "taguatinga":
+            case "agua claras":
+                tax_entrega = 7.00;
+                break;
+            case "asa norte":
+                tax_entrega = 10.00;
+                break;
+            default:
+                tax_entrega = 8.00;
+                break;
+        }
+
+        alert("Taxa de Entrega R$" + tax_entrega.toFixed(2));
+    </script>
+    
+</body>
+</html>
