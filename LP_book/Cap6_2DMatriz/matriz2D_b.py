@@ -1,10 +1,10 @@
-from makeMatriz import matrizBiOrdinaria, printMatrizBi, matrizBiAleatorio, matrizUniOrdinaria
+from makeMatriz as mk
 
 # x = numero de linhas 
 # y = numero de colunas
 
-matrizA = matrizUniOrdinaria(7,6)
-matrizB = matrizUniOrdinaria(7,10)
+matrizA = mk.matrizUniOrdinaria(7,6)
+matrizB = mk.matrizUniOrdinaria(7,10)
 
 matrizC = matrizBiOrdinaria(2,7,1)
 
