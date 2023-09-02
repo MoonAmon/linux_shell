@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        var sexo = prompt("Digite seu sexo M para masculino ou F para feminino");
+        var altura = parseFloat(prompt("Digite a sua altura:"));
+
+        switch (sexo.toUpperCase()) {
+            case 'M':
+                alert("O peso ideal para sua altura é "+(72.7*altura-58));
+                break;
+            case 'F':
+                alert("O peso ideal para sua altura é "+(62.1*altura-44.7));
+                break;
+            default:
+                alert("Valor inválido! Digite um valor valido de acordo com seu sexo!");
+                break;
+        }
+    </script>
+ </head>
+ <body>
+    
+ </body>
+ </html>
